@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="greetings">
+        <span>H</span>
+        <span>O</span>
+        <span>L</span>
+        <span>A</span>
+    </div>
+    
+    <div class="invitation">
+        <h2>Una cita especial para San Valentín ❤️</h2>
+        <p>Quiero invitarte a celebrar juntos este día tan especial.</p>
+        <p><strong>Fecha:</strong> Domingo 16 de febrero</p>
+        <p><strong>Lugar:</strong> Secreto (Sorpresa 😊)</p>
+        <p>Será un momento inolvidable, solo para nosotros dos.</p>
+        
+        <button id="acceptInvite" class="button">Aceptar la invitación 💌</button>
+    </div>
+
+    <!-- Sección oculta con imágenes -->
+    <div id="surpriseImages" class="hidden">
+        <h3>Lugar Sorpresa 📍</h3>
+        <div class="images-container">
+            <img src="img/El-paseo-de-los-girasoles-Copan-Ruinas-11.jpg" alt="Lugar sorpresa 1">
+            <img src="img//OIP.jpg" alt="Lugar sorpresa 2">
+        </div>
+
+
+    </div>
+
+    <div class="button hidden" id="flowerButton">
+        <button>
+            <a href="FLORES.html">Unas flores para mi mujer hermosa ❤️</a>
+        </button>
+    </div>
+
+    <script>
+        document.getElementById("acceptInvite").addEventListener("click", function() {
+            document.getElementById("surpriseImages").classList.add("show");
+            document.getElementById("flowerButton").classList.add("show");
+            this.style.display = "none"; // Oculta el botón de aceptar
+        });
+    </script>
+
+</body>
+</html>
